@@ -155,7 +155,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px; /* Spacing between items */
-        justify-content: center; /* NOWA LINIA: Wyśrodkowuje elementy w poziomie */
+        justify-content: center; /* Wyśrodkowuje elementy w poziomie */
       }
 
       #languages li,
@@ -171,6 +171,11 @@
       #languages strong {
         font-family: "Open Sans", sans-serif; /* Keep Open Sans for language level */
         font-size: 1em;
+      }
+
+      /* Style for emojis in language list to give them a little space */
+      #languages li .flag-emoji {
+        margin-right: 5px;
       }
 
       #interests li {
@@ -486,10 +491,10 @@
         <span role="img" aria-label="speech balloon">💬</span> Znajomość języków
       </h2>
       <ul>
-        <li><span role="img" aria-label="flag of United Kingdom">🇬🇧</span> <strong>Angielski:</strong> B2</li>
-        <li><span role="img" aria-label="flag of Germany">🇩🇪</span> <strong>Niemiecki:</strong> A1</li>
-        <li><span role="img" aria-label="flag of Italy">🇮🇹</span> <strong>Włoski:</strong> A1</li>
-        <li><span role="img" aria-label="flag of Poland">🇵🇱</span> <strong>Polski:</strong> ojczysty</li>
+        <li><span class="flag-emoji">🇬🇧</span> <strong>Angielski:</strong> B2</li>
+        <li><span class="flag-emoji">🇩🇪</span> <strong>Niemiecki:</strong> A1</li>
+        <li><span class="flag-emoji">🇮🇹</span> <strong>Włoski:</strong> A1</li>
+        <li><span class="flag-emoji">🇵🇱</span> <strong>Polski:</strong> ojczysty</li>
       </ul>
     </div>
 
