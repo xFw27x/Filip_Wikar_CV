@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./images/logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Montserrat:wght@700&display=swap"
@@ -214,6 +215,31 @@
         margin-top: 30px;
         padding-top: 10px;
         border-top: 1px dashed #ddd;
+      }
+      /* Styl dla przycisku zmiany języka */
+      .language-switcher-button {
+        display: inline-flex; /* Umożliwia ułożenie ikony i tekstu w linii */
+        align-items: center; /* Wyśrodkowanie w pionie */
+        padding: 10px 20px;
+        background-color: #1a5276; /* Ten sam kolor co linie pod nagłówkami */
+        color: #fff; /* Biały tekst */
+        border: none;
+        border-radius: 5px; /* Delikatne zaokrąglenie, pasujące do zdjęcia */
+        font-family: "Open Sans", sans-serif; /* Czcionka z treści strony */
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none; /* Usuwa podkreślenie linku */
+        transition: background-color 0.3s ease; /* Płynne przejście koloru przy najechaniu */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Delikatny cień */
+      }
+
+      .language-switcher-button:hover {
+        background-color: #2c3e50; /* Ciemniejszy odcień niebieskiego przy najechaniu (kolor nagłówków) */
+      }
+
+     .language-switcher-button .icon {
+        margin-right: 8px; /* Odstęp między ikoną a tekstem */
+        font-size: 1.2em; /* Rozmiar ikony globu */
       }
 
       /* Print Specific Styles */
@@ -553,9 +579,15 @@
       individuals with regard to the processing of personal data and on the
       free movement of such data and repealing Directive 95/46/EC (GDPR).
     </p>
-    <div style="text-align: center; margin-top: 20px;">
-      <a href="index.html"><span class="flag-icon flag-icon-pl"></span> Polish
-        Version</a>
-    </div>
+   <div style="text-align: center; margin-top: 20px;">
+  <!-- Przycisk do zmiany na Angielski -->
+  <a href="index.html" class="language-switcher-button">
+    <i class="fas fa-globe icon"></i> Polish Version
+  </a>
+  <!-- Możesz dodać drugi przycisk, jeśli to wersja angielska i chcesz przełączyć na polski -->
+  <!-- <a href="index.html" class="language-switcher-button" style="margin-left: 10px;">
+        <i class="fas fa-globe icon"></i> Wersja Polska
+    </a> -->
+</div>
   </body>
 </html>
