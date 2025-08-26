@@ -215,7 +215,31 @@
         padding-top: 10px;
         border-top: 1px dashed #ddd;
       }
+  /* Styl dla przycisku zmiany języka */
+      .language-switcher-button {
+        display: inline-flex; /* Umożliwia ułożenie ikony i tekstu w linii */
+        align-items: center; /* Wyśrodkowanie w pionie */
+        padding: 10px 20px;
+        background-color: #1a5276; /* Ten sam kolor co linie pod nagłówkami */
+        color: #fff; /* Biały tekst */
+        border: none;
+        border-radius: 5px; /* Delikatne zaokrąglenie, pasujące do zdjęcia */
+        font-family: "Open Sans", sans-serif; /* Czcionka z treści strony */
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none; /* Usuwa podkreślenie linku */
+        transition: background-color 0.3s ease; /* Płynne przejście koloru przy najechaniu */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Delikatny cień */
+      }
 
+      .language-switcher-button:hover {
+        background-color: #2c3e50; /* Ciemniejszy odcień niebieskiego przy najechaniu (kolor nagłówków) */
+      }
+
+     .language-switcher-button .icon {
+        margin-right: 8px; /* Odstęp między ikoną a tekstem */
+        font-size: 1.2em; /* Rozmiar ikony globu */
+      }
       /* Print Specific Styles */
       @media print {
         body {
@@ -269,13 +293,11 @@
     <div class="section">
       <h2 class="section-title">O mnie </h2>
       <div id="about-me-content">
-        Jestem ambitnym studentem Politechniki Krakowskiej o specjalizacji
-        elektrotechnika i automatyka, z praktycznym doświadczeniem w
-        prefabrykacji szaf sterowniczych, instalacjach elektrycznych oraz
-        podstawami programowania PLC. Poszukuję możliwości rozwoju w obszarze
-        automatyki, gdzie mogę wykorzystać swoje umiejętności i szybko
-        przyswajać nową wiedzę. Jestem osobą zaangażowaną, otwartą na wyzwania i
-        gotową do nauki.
+        Młodszy  Automatyk z praktycznym doświadczeniem w serwisie, uruchamianiu
+       i utrzymaniu systemów automatyki. Posiadam umiejętności w zakresie instalacji elektrycznych,
+       rozwiązywania problemów, programowania sterowników PLC (LD, FBD) oraz tworzenia dokumentacji serwisowej.
+       Wysoce zmotywowany do rozwoju w obszarze serwisu terenowego i automatyki przemysłowej,
+       zdolny do częstych podróży i pracy przy projektach międzynarodowych.
       </div>
     </div>
 
@@ -310,17 +332,19 @@
     <hr />
 
     <div class="section">
-      <h2 class="section-title">Doświadczenie zawodowe </h2>
+      <h2 class="section-title">Doświadczenie zawodowe</h2>
       <div class="section-item">
-        <span class="date-range">07.2022 - obecnie</span>
+        <span class="date-range">07.2022 - Obecnie</span>
         <div class="item-content">
-          <p class="item-title">IMI Polska Sp. z o.o. (grupa AIUT) | Kraków | Młodszy automatyk</p>
+          <p class="item-title">
+            IMI Polska Sp. z o.o. (AIUT Group) | Kraków | Młodszy Inżynier Automatyk
+          </p>
           <p class="description">
-            - Opracowywanie tras kablowych i projektowanie schematów elektrycznych w SEE Electrical</br>
-- Prefabrykacja szaf sterowniczych oraz wykonywanie montażu elektrycznego na obiektach</br>
-- Przygotowywanie podstawowej logiki sterowników PLC dla nowych instalacji</br>
-- Diagnozowanie i usuwanie usterek w systemach elektrycznych w ramach obsługi gwarancyjnej</br>
-- Wprowadzanie drobnych korekt w programach PLC w celu optymalizacji działania
+            - Tworzenie dokumentacji i schematów elektrycznych w SEE Electrical</br>
+            - Budowa i montaż szaf sterowniczych, wykonywanie montażu na obiekcie</br>
+            - Przygotowywanie podstawowej logiki sterowników PLC dla nowych instalacji</br>
+            - Diagnozowanie i rozwiązywanie problemów w systemach automatyki objętych gwarancją</br>
+            - Wspieranie uruchomień i wprowadzanie korekt programowych w celu optymalizacji wydajności
           </p>
         </div>
       </div>
@@ -328,13 +352,14 @@
         <span class="date-range">05.2022 - 07.2022</span>
         <div class="item-content">
           <p class="item-title">
-            Techglass Sp. z o.o. | Kraków | Automatyk specjalista ds. piecy
-            szklarskich
+            Techglass Sp. z o.o. | Kraków | Specjalista ds. Automatyki - Piece
+            Szklarskie
           </p>
           <p class="description">
-            - Wdrażanie zróżnicowanych modyfikacji automatyki w liniach produkcyjnych hut szkła</br>
-- Montaż elektryczny oraz uruchamianie instalacji podczas realizacji nowych projektów</br>
-- Współpraca z zespołem przy integracji rozwiązań automatyzacji zwiększających wydajność
+            - Wdrażanie modyfikacji automatyki w liniach produkcyjnych</br>
+            - Wykonywanie instalacji elektrycznych i uruchomień dla nowych projektów</br>
+            - Współpraca przy integracji rozwiązań automatyki w celu poprawy wydajności</br>
+            - Prowadzenie wsparcia i testów na miejscu podczas uruchomień
           </p>
         </div>
       </div>
@@ -343,26 +368,25 @@
         <div class="item-content">
           <p class="item-title">Pinnex-Info Sp. z o.o. | Kraków | Serwisant</p>
           <p class="description">
-            - Realizacja napraw serwisowych i wymiana modułów elektronicznych w drukarkach fiskalnych</br>
-- Sporządzanie protokołów serwisowych i rozliczeń sprzętu</br>
-- Informowanie klientów o usterkach i koordynacja odbioru urządzeń
+            - Wykonywanie napraw serwisowych i wymiana modułów elektronicznych</br>
+            - Sporządzanie uporządkowanych raportów serwisowych i dokumentacji</br>
+            - Informowanie klientów o usterkach i koordynowanie odbioru sprzętu
           </p>
         </div>
       </div>
       <div class="section-item">
         <span class="date-range">05.2021 - 06.2021</span>
         <div class="item-content">
-          <p class="item-title">Vesuvius Poland Sp. z o.o. | Skawina | Staż</p>
+          <p class="item-title">Vesuvius Poland Sp. z o.o. | Skawina | Stażysta</p>
           <p class="description">
-            - Współpraca przy projektach automatyzacji i optymalizacji pracy operatorów w zakładzie produkcyjnym </br>
-- Prowadzenie analiz skuteczności nowych rozwiązań poprzez symulacje pracy botów kartezjańskich</br>
-- Wykonywanie analiz ryzyka przy użyciu narzędzi SWOT oraz diagramów Ishikawy</br>
-- Wdrażanie usprawnień w procesach w celu redukcji kosztów i poprawy efektywności
+            - Współpraca przy projektach usprawnienia automatyki i wydajności operatorów w zakładzie produkcyjnym</br>
+            - Przeprowadzanie analiz efektywności nowych rozwiązań poprzez symulacje pracy robotów kartezjańskich</br>
+            - Wykonywanie analiz ryzyka z wykorzystaniem narzędzi SWOT i diagramów Ishikawy</br>
+            - Wdrażanie usprawnień procesowych w celu redukcji kosztów i poprawy efektywności
           </p>
         </div>
       </div>
     </div>
-
     <hr />
 
     <div class="section">
@@ -458,18 +482,7 @@
           </p>
         </div>
       </div>
-      <div class="section-item">
-        <span class="date-range">02.2019</span>
-        <div class="item-content">
-          <p class="item-title">
-            Kurs: Zastosowanie 3DS MAX do projektowania i budowania scen
-            trójwymiarowych
-          </p>
-          <p class="description">
-            Obsługa programu 3DS MAX na poziomie podstawowym.
-          </p>
-        </div>
-      </div>
+      
     </div>
 
     <hr />
@@ -477,7 +490,7 @@
     <div class="section" id="languages">
       <h2 class="section-title">Znajomość języków </h2>
       <ul>
-        <li><span class="flag-icon flag-icon-gb"></span> <strong>Angielski:</strong> B2</li>
+        <li><span class="flag-icon flag-icon-gb"></span> <strong>Angielski:</strong> B2 (używany w pracy z dokumentacją techniczną i w komunikacji z klientami)</li>
         <li><span class="flag-icon flag-icon-de"></span> <strong>Niemiecki:</strong> A1</li>
         <li><span class="flag-icon flag-icon-it"></span> <strong>Włoski:</strong> A1</li>
         <li><span class="flag-icon flag-icon-pl"></span> <strong>Polski:</strong> ojczysty</li>
@@ -489,13 +502,18 @@
     <div class="section" id="skills">
       <h2 class="section-title">Umiejętności </h2>
       <ul>
-        <li>Dobra organizacja pracy</li>
-        <li>Umiejętność pracy w grupie i samodzielnie</li>
-        <li>Występy publiczne</li>
-        <li>Łatwość nawiązywania kontaktów</li>
-        <li>Wysoka kultura osobista</li>
-        <li>Rysowanie schematów elektrycznych w SEE Electrical</li>
-        <li>Programowanie sterowników PLC w językach LD oraz FBD</li>
+        <li>Programowanie sterowników PLC (LD, FBD)</li>
+    <li>SEE Electrical</li>
+    <li>Diagnostyka oraz usuwanie usterek</li>
+    <li>Uruchamianie instalacji</li>
+    <li>Montaż szaf sterowniczych</li>
+    <li>Instalacje elektryczne</li>
+    <li>Dokumentacja serwisowa</li>
+    <li>Komunikacja z klientem</li>
+    <li>Praca zespołowa</li>
+    <li>Rozwiązywanie problemów pod presją czasu</li>
+    <li>Elastyczność</li>
+    <li>Samodzielność</li>
 
       </ul>
     </div>
@@ -566,5 +584,11 @@
     <div style="text-align: center; margin-top: 20px;">
       <a href="index_en.html"><span class="flag-icon flag-icon-en"></span> Wersja angielska</a>
     </div>
+       <div style="text-align: center; margin-top: 20px;">
+  <!-- Przycisk do zmiany na Angielski -->
+  <a href="index.html" class="language-switcher-button">
+    <i class="fas fa-globe icon"></i> English Version
+  </a>
+</div>
   </body>
 </html>
